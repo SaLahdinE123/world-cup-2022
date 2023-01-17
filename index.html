@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>world cup</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="images/2022_FIFA_World_Cup.svg.webp" style="width: 50px;" alt="">
+                </div>
+                <div class="links-left">
+                    <ul>
+                        <li>groups</li>
+                        <li>matches</li>
+                        <li>scors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-groups">
+        <div class="container">
+            <h1>groups</h1>
+            <div class="cards" id="cards"></div>
+        </div>
+    </div>
+    <div class="section-matches">
+        <div class="container">
+            <h1>matches</h1>
+            <div class="card-match" id="card-matches">
+            </div>
+        </div>
+    </div>
+    <div class="section-scorers">
+        <div class="container">
+            <h1>scorers</h1>
+            <div class="card-scorers" id="card-scorers">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td>name</td>
+                            <td>nationality</td>
+                            <td>position</td>
+                            <td>goals</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
